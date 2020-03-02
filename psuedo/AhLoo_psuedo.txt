@@ -1,0 +1,39 @@
+# UDPPingerClient.py
+
+# declare modules
+
+<import socket stuff>
+
+# declare and assign address of UDP IP
+
+# declare and assign UDP port number
+
+# create the client socket
+
+# set timeout for server reply (1 sec)
+
+# set sequence variable to track sequence count
+
+# create list to store RTT values
+
+# create while loop to repeat process
+
+  # set current time, assign seq count to message variable
+
+  # try and except block to handle exceptions
+
+    # set client socket to receive message from serverSocket
+
+    # calculate RTT
+
+  # declare except condition to reply with timeout if no response in 1 second
+  # increment seq count by 1
+# end while
+
+# create conditional to check sequence count more than 10
+
+  # calculate loss rate and convert to string
+
+  # calculate mean value
+
+  # display max RTT, min, average RTT,

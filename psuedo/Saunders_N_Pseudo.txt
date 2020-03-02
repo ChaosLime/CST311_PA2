@@ -1,0 +1,26 @@
+#UDPPingerClient.py
+#Nicholas Saunders Pseudo Code
+#Create a module to send 10 pings and implement a timeout 
+#Create a UDP socket for client 
+#Input to be sent to server as a ping 
+#Start a loop for 10 packets being sent 
+	
+	#Start time before sending packet 
+	#Send packet 
+	#Implementing a 1 sec timeout 
+	#Set timeout with throw/expection on TimeoutError
+	
+	#Try/Exception block 
+	try
+		#Receive message back from server if it has been sent 
+	except: 
+		#If a timeout exception is thrown it will time out and the loop will move forward 
+		#adjust appropriate values with increments 
+	continue
+	#Received message from the server we time RTT, add 
+	#appropriate values into all, and set min/max when necessary 
+
+	#average start-stop time as of this point is calculated and printed 
+	#Now that we are out of the loop we will calculate total average and loss percentage 
+	#Printing loss percentage, total average, min, and max 
+	#close socket 

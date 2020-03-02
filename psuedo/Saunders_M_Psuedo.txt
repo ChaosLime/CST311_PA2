@@ -1,0 +1,20 @@
+#UPDPingerClient.py psudo-code
+
+#get and set servername and server port
+
+#create client socket via socket library
+
+#display "Pinging [display ip address of server] with packet."
+
+#initialize RTT, DevRTT, and RTO variables to set scope. Also initilize counter, minimum and maximum time variables
+
+#using a loop, iterate x times to ping server x times
+	#send UPD packet to server (with timeout option set to 1 second), record time sent
+	
+	#If the packet was recieved
+		#Then record and display the time it took to get back.
+		#update running variables for RTT, DevRTT, and RTO
+	#Else
+		#Display timeout message
+	
+	#Display all relevant variables to the user

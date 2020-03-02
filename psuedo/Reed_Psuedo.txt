@@ -1,0 +1,23 @@
+SetServerObject
+Loop(While n < 10)
+   Print message
+   SendMessage(toServer)
+   startTime = (now)
+   OneSecondTimer
+      If !Returned
+         lostPackets++
+         Print "Request timed out"
+         continue
+   receiveMessage
+   receiveTime = (now)
+   RTT = receiveTime - startTime
+   Print RTT
+   updateMinimum
+   updateMaximum
+   updateAverage
+   updateEstimatedRTT
+   updateDevRTT
+Print minimum, maximum, average
+Print lostPackets, getPercentOfLostPackets
+Print estimatedRTT, DevRTT, getTimeoutInterval
+   
